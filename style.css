@@ -1,0 +1,23 @@
+#fieldText {
+   display: none;
+};
+
+#heading {
+   color: black;
+   font: 50px sans-serif;
+   text-align: center;
+   padding: 5px;
+}
+
+#fieldPal {
+   max-width: 2%;
+   padding: 5px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   margin: 30px auto 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;  
+   gap: 5px;
+   border-color: black;
+}
