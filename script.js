@@ -12,12 +12,22 @@ function checkPal (){
 
     runText = enterText.value;
     splitText = runText.split("");
+   for (let i = 0; revText.length < splitText.length; i++){
+      revText.unshift(splitText[i]);
+   }
+   
+    /* Hashed out to experiment with For loops. 
+    
        do {
         revText.unshift(splitText[textCount]);
         textCount++;
        } while (revText.length < splitText.length);
+    */    
+
 
 let joinedText = revText.join("");
+joinedText = joinedText.toLocaleLowerCase();// attempting to convert to lowercase
+runText = runText.toLocaleLowerCase();// attempting to convert to lowercase
     
        if (joinedText === runText) {
           fieldText.style.display = "block";
